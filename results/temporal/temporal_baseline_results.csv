@@ -1,0 +1,2 @@
+classifier,seed,train_records,test_records,excluded_year_only_records,accuracy_pct,macro_f1_pct
+Random Forest,42,3909,2749,17,94.65260094579847,84.35737118404623

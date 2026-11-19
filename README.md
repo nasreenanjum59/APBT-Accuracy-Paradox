@@ -42,3 +42,9 @@ The [retrieval program](src/retrieve_sequences.py) contains the NCBI queries and
 ## Results
 
 The [results tables](results/) contain the repeated baseline evaluations, per-lineage recall, paired classifier comparisons, and aggregate evaluations for Conditions A to C. Accuracy, macro F1 and recall are reported as percentages. Paired differences are in percentage points. The [figures](figures/) show performance under Conditions A to C and F1 by lineage.
+
+## Baseline analyses
+
+Install the Python dependencies with `python -m pip install -r requirements.txt`. From the repository root, run `python src/temporal_baseline.py` for the temporal holdout or `python src/repeated_baseline.py` for repeated stratified cross-validation. Each program writes to its own directory under `reproduced/`.
+
+The [temporal split manifest and results](results/temporal/) identify 3,909 training records, 2,749 test records and 17 excluded records. The [supplementary accession table](supplement/Supplementary_Data_S1_Accession_List.csv) includes the percentage of ambiguous N bases for each record.
