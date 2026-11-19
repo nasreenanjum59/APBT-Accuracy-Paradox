@@ -32,3 +32,13 @@ assert counts == expected
 
 print(f"{len(records):,} records across {len(counts)} lineage groups")
 ```
+
+## Data and retrieval
+
+[Download the frozen sequence CSV](data/cohort.csv.xz). The archive uses XZ compression. After decompression, the CSV should match the SHA-256 checksum above. The accession table is a smaller alternative for metadata analysis.
+
+The [retrieval program](src/retrieve_sequences.py) contains the NCBI queries and filtering rules. It requires Python 3 and Biopython. Set the `NCBI_EMAIL` environment variable to a contact address before running `python src/retrieve_sequences.py --max-per-lineage 2400`. A new search can return different records as GenBank changes.
+
+## Results
+
+The [results tables](results/) contain the repeated baseline evaluations, per-lineage recall, paired classifier comparisons, and aggregate evaluations for Conditions A to C. Accuracy, macro F1 and recall are reported as percentages. Paired differences are in percentage points. The [figures](figures/) show performance under Conditions A to C and F1 by lineage.
