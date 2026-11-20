@@ -1,0 +1,19 @@
+{
+  "dataset": "study3_sequences_v3_max2400_20260720_131521.csv",
+  "n_total_records": 6675,
+  "n_train": 3909,
+  "n_test": 2749,
+  "n_excluded_year_only": 17,
+  "split_rule": "Within each lineage, latest complete collection months assigned to test until at least 20% of month-resolved records are held out. Complete months kept intact.",
+  "lineage_month_overlap_train_test": 0,
+  "classifier": "RandomForestClassifier",
+  "n_estimators": 100,
+  "random_seed": 42,
+  "feature_dimension": 256,
+  "software": {
+    "python": "3.9.13",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.6.1"
+  }
+}

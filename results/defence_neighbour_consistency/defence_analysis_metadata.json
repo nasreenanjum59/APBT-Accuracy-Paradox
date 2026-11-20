@@ -1,0 +1,33 @@
+{
+  "dataset": "cohort.csv.xz",
+  "dataset_sha256": "ce3041d6601ec36724653cfa5ebc1905bf54fc8841657d1fbf3cacc1ca8ba64d",
+  "n_records": 6675,
+  "feature_dimension": 256,
+  "lineages": [
+    "B.1.1.7",
+    "B.1.617.2",
+    "BA.1",
+    "BA.2",
+    "BA.5",
+    "BQ.1",
+    "P.1"
+  ],
+  "repeat_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "n_folds": 5,
+  "distance_metric": "cosine",
+  "primary_rule": "flag when at least 3 of 5 nearest eligible training neighbours support a different label",
+  "sensitivity_rule": "flag when at least 4 of 5 nearest eligible training neighbours support a different label",
+  "condition_E_reference": "pre-existing legitimate training fold; injected candidates are not used as reference neighbours",
+  "held_out_test_use_in_defence": "none"
+}

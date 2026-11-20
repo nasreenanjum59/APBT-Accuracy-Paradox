@@ -1,7 +1,8 @@
+# Versions used for the published results (Python 3.9.13).
 biopython
-matplotlib
-numpy
-pandas
-scikit-learn
-seaborn
-xgboost
+matplotlib==3.9.4
+numpy==2.0.2
+pandas==2.3.3
+scikit-learn==1.6.1
+seaborn==0.13.2
+xgboost==2.1.4

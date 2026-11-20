@@ -1,0 +1,30 @@
+SCIENTIFIC REPORTS REVISION — REPEATED EVALUATION CONFIGURATION
+========================================================================
+Run time: 2026-11-15T01:10:47
+Dataset: study3_sequences_v3_max2400_20260720_131521.csv
+Filtered dataset size: 6675
+Feature dimension: 256
+CV: 5-fold stratified, repeated 10 times
+Repeat seeds: [42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+Within each repeat, held-out predictions are pooled across the five folds.
+Reported uncertainty: sample SD and two-sided 95% Student t CI across repeat-level estimates.
+Condition D burden: affected records / original full training fold.
+Condition E burden: injected records / resulting full training fold.
+Spike substitutions use a deterministic SHA-256-derived seed for cross-process reproducibility.
+
+Software versions:
+  Python: 3.9.13
+  NumPy: 2.0.2
+  pandas: 2.3.3
+  scikit-learn: 1.6.1
+  xgboost: 2.1.4
+  matplotlib: 3.9.4
+  seaborn: 0.13.2
+
+Run switches:
+  REGENERATE_ORIGINAL_OUTPUTS=False
+  RUN_REPEATED_BASELINE=True
+  RUN_REPEATED_CONDITION_D=True
+  RUN_REPEATED_ABC=True
+  RUN_REPEATED_CONDITION_E=True
+  RUN_HQ_FIGURES=True

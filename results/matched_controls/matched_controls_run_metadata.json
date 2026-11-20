@@ -1,0 +1,63 @@
+{
+  "script_version": "matched_conditionD_controls_v1",
+  "dataset": "study3_sequences_v3_max2400_20260720_131521.csv",
+  "n_records_after_filtering": 6675,
+  "lineage_counts": {
+    "BA.5": 2400,
+    "BA.2": 2400,
+    "B.1.1.7": 735,
+    "BA.1": 550,
+    "BQ.1": 279,
+    "B.1.617.2": 216,
+    "P.1": 95
+  },
+  "feature_dimension": 256,
+  "kmer_size": 4,
+  "classifier": "RandomForestClassifier",
+  "n_estimators": 100,
+  "balanced_sample_weights_recomputed_after_modification": true,
+  "n_folds": 5,
+  "repeat_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "control_rates_pct": [
+    10.0,
+    20.0,
+    30.0
+  ],
+  "source_lineages": [
+    "BQ.1",
+    "BA.5",
+    "P.1"
+  ],
+  "primary_destinations": {
+    "BQ.1": "BA.5",
+    "BA.5": "BA.2",
+    "P.1": "B.1.617.2"
+  },
+  "alternative_destination_rule": "every other lineage class",
+  "matching_rule": "Within each repeat/fold/source/rate, removal, random relabelling, and every targeted destination use the exact same selected source records and absolute budget m. Selection is nested by rate.",
+  "random_relabel_rule": "Selected source records receive deterministic random labels drawn from all six non-source classes; assignments are nested/consistent as the rate increases within a repeat/fold/source.",
+  "ci_rule": "Repeat-level metrics pool all five held-out folds; mean, sample SD, and two-sided 95% Student-t CI are calculated across 10 repeats.",
+  "software": {
+    "python": "3.9.13",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.6.1"
+  },
+  "outputs": [
+    "matched_controls_repeat_level.csv",
+    "matched_controls_summary.csv",
+    "matched_controls_primary_paired_comparisons.csv",
+    "matched_controls_destination_range.csv"
+  ]
+}
