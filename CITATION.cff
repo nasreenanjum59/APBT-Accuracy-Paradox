@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+type: software
+title: "APBT Accuracy Paradox: code and data for targeted data poisoning in SARS-CoV-2 lineage classification"
+abstract: "Code, frozen sequence cohort and results for a study of targeted data poisoning in SARS-CoV-2 lineage classification. The study shows how high overall accuracy can conceal lineage specific failure."
+authors:
+  - family-names: Anjum
+    given-names: Nasreen
+    orcid: "https://orcid.org/0000-0002-7126-2177"
+    affiliation: University of Portsmouth
+repository-code: "https://github.com/nasreenanjum59/APBT-Accuracy-Paradox"
+license: MIT
+keywords:
+  - SARS-CoV-2
+  - lineage classification
+  - data poisoning
+  - genomic surveillance
+  - machine learning
