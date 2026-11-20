@@ -1,5 +1,9 @@
 # APBT Accuracy Paradox
 
+## Archived release
+
+The code, datasets, and reproducibility materials corresponding to the revised manuscript are archived on Zenodo at DOI [10.5281/zenodo.24394475](https://doi.org/10.5281/zenodo.24394475). This GitHub repository provides the public working copy of the same study materials.
+
 ## Study cohort
 
 The analysis used 6,675 GenBank records from seven lineage groups. The [accession table](data/accessions.csv) identifies each record. Its `lineage` column gives the class used in the analysis.
